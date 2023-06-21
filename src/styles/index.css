@@ -1,0 +1,277 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nav-link:hover {
+    text-decoration: underline !important;
+}
+
+.link {
+    color: #D9D2B0 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+#equipmentDropdown,
+#adminDropdown,
+#userDropdown {
+    color: #D9D2B0 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+/* HOME */
+
+.subtitle-container {
+    background: url("http://localhost:3000/images/headerImage.png") no-repeat center center / cover;
+    position: relative;
+    height: 91vh;
+    overflow: hidden;
+    scroll-snap-align: center;
+    display: grid;
+    grid: repeat(3, 1fr)/ repeat(3, 1fr);
+}
+
+.subtitle-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.subtitle-container:hover:before {
+    opacity: 0.5;
+}
+
+.subtitle-container .subtitle {
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -30px;
+    transition: 0.5s ease;
+    z-index: 0;
+    letter-spacing: 25px;
+}
+
+.subtitle-container h2 {
+    font: 900 70px Montserrat;
+}
+
+.subtitle-container p {
+    font: 900 50px Montserrat;
+}
+
+.subtitle-container .hover {
+    z-index: 1;
+}
+
+.subtitle-container .hover-1:hover~.subtitle {
+    left: 30px;
+    margin-top: -10px;
+}
+
+.subtitle-container .hover-2:hover~.subtitle {
+    margin-top: -10px;
+}
+
+.subtitle-container .hover-3:hover~.subtitle {
+    right: 30px;
+    margin-top: -10px;
+}
+
+.subtitle-container .hover-4:hover~.subtitle {
+    left: 30px;
+}
+
+.subtitle-container .hover-6:hover~.subtitle {
+    right: 30px;
+}
+
+.subtitle-container .hover-7:hover~.subtitle {
+    left: 30px;
+    margin-top: -50px;
+}
+
+.subtitle-container .hover-8:hover~.subtitle {
+    margin-top: -50px;
+}
+
+.subtitle-container .hover-9:hover~.subtitle {
+    right: 30px;
+    margin-top: -50px;
+}
+
+.aboutContainer {
+    margin-top: 120px;
+    background-color: #3C5473;
+}
+
+.aboutRow {
+    margin-top: -120px !important;
+    color: #D9D2B0;
+}
+
+.carousel {
+    text-shadow: 0px 0px 20px #000;
+}
+
+.aboutContent {
+    width: 95%;
+}
+
+.carousel .w-100 {
+    width: 100% !important;
+    height: 75vh;
+}
+
+/* OFF CANVAS */
+
+.offcanvas {
+    background-color: #3C5473 !important;
+    color: #D9D2B0 !important;
+}
+
+.offcanvas .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* EQUIPMENT SHOW ALL */
+
+.equipmentCard {
+    width: 350px;
+    margin: 60px 10px 60px 10px;
+    padding: 0 30px 20px 30px;
+    border-radius: 24px;
+    position: relative;
+    background-color: #3C5473;
+    transition: all .2s ease-in-out;
+}
+
+.equipmentCard div:first-of-type {
+    cursor: pointer;
+}
+
+.equipmentCard .imgContainer {
+    margin: -50px 0 30px 0;
+    border-radius: 24px;
+    background-color: #071635;
+}
+
+.equipmentCard .imgContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.equipmentCard:hover {
+    transform: scale(1.1);
+}
+
+/* INFO (TALISMAN, ASH, SPELL) */
+
+.img-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #071635;
+}
+
+.img-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* ACHIEVEMENTS */
+
+.achievementContainer {
+    width: 350px;
+    margin: 20px 10px 60px 10px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 24px;
+    position: relative;
+    background-color: #3C5473;
+}
+
+.achievementContainer img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.check {
+    position: absolute;
+    bottom: -20px;
+    right: 35%;
+    background-color: #071635;
+    color: #D9D2B0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* STATS */
+
+.statCard {
+    width: 350px;
+    margin: 0 10px 60px 10px;
+    padding: 0 30px 20px 30px;
+    border-radius: 24px;
+    background-color: #3C5473;
+}
+
+/* CLASSES */
+
+.classCard {
+    width: 350px;
+    margin: 60px 10px 60px 10px;
+    padding: 0 30px 20px 30px;
+    border-radius: 24px;
+    background-color: #3C5473;
+}
+
+.classCard .imgContainer {
+    margin: -100px 0 30px 0;
+    border-radius: 24px;
+    background-color: #071635;
+}
+
+.classCard .imgContainer img {
+    width: 200px;
+    height: 300px;
+}
+
+/* CATEGORIES */
+
+.categoryContainer {
+    width: 250px;
+    margin: 20px 10px 20px 10px;
+    cursor: pointer;
+    background-color: #3C5473;
+    transition: all .2s ease-in-out;
+}
+
+.categoryContainer h3 {
+    color: #D9D2B0;
+    transition: all .2s ease-in-out;
+}
+
+.categoryContainer:hover {
+    transform: scale(1.1);
+}
+
+/* FORMS */
+
+.formStyle {
+    background-color: #3C5473;
+    margin: 48px 0 48px 0;
+    padding: 50px;
+    color: #D9D2B0;
+}
